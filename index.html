@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="text" id="searchTerm" placeholder="enter city name" required />
+    <button onclick="searchPlaces()">Search</button>
+    
+    <div id="responseData"></div>
+    
+    <div id="cont">
+        
+        <input type="number" id="limit" min="1" max="10" value="5" />
+        
+        <div id="pagination">
+          <button id="first" onclick="first()">First</button>
+          <button id="next" onclick="next()">Next</button>
+          <button id="last" onclick="last()">Last</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
