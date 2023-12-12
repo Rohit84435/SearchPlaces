@@ -65,7 +65,7 @@ function searchPlaces() {
   xhr.setRequestHeader(
     "x-rapidapi-key",
     "4d87729a07msh6b6acfcb8506b57p1f45adjsn3a7a3e979c66"
-  ); // Replace with your actual API key
+  ); 
   xhr.send();
 }
 
@@ -94,11 +94,11 @@ function generateTable(data) {
     "regionCode"          
   ];
 
-  // Create a table element
+ 
   const table = document.createElement("table");
   table.border = "1";
 
-  // Create a header row excluding specified keys
+ 
   const headerRow = table.insertRow();
   const serialNumberHeader = document.createElement("th");
   serialNumberHeader.textContent = "S.No";
@@ -112,7 +112,7 @@ function generateTable(data) {
     }
   });
 
-  // Create rows for each city excluding specified keys and add a serial number
+  
   data.forEach((city, index) => {
     const row = table.insertRow();
     const serialNumberCell = row.insertCell();
@@ -193,7 +193,7 @@ function last() {
   xhr.setRequestHeader(
     "x-rapidapi-key",
     "4d87729a07msh6b6acfcb8506b57p1f45adjsn3a7a3e979c66"
-  ); // Replace with your actual API key
+  ); 
   xhr.send();
 }
 
